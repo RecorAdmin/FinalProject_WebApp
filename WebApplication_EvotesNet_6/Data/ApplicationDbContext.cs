@@ -9,5 +9,8 @@ namespace WebApplication_EvotesNet_6.Data
             : base(options)
         {
         }
+        public DbSet<Candidates> Candidates { get; set; }
+        public DbSet<Voters> Voters { get; set; }
+        public DbSet<VotersAllocations> VotersAllocations { get; set; }
     }
 }
