@@ -7,7 +7,7 @@ namespace WebApplication_EvotesNet_6.Data
         [Display(Name ="First Name")]
         public String? FirstName { get; set; }
 
-        [Display(Name = "First Name")]
+        [Display(Name = "Last Name")]
         public String? LastName { get; set; }
         public String? Constituency { get; set; }
 
