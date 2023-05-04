@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +12,7 @@ using WebApplication_EvotesNet_6.Models;
 
 namespace WebApplication_EvotesNet_6.Controllers
 {
+    [Authorize]
     public class CandidatesController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -21,7 +23,7 @@ namespace WebApplication_EvotesNet_6.Controllers
             _context = context;
             this.mapper = mapper;
         }
-
+    
         // GET: Candidates
         public async Task<IActionResult> Index()
         {
@@ -46,7 +48,7 @@ namespace WebApplication_EvotesNet_6.Controllers
 
             return View(candidates);
         }
-
+        [Authorize(Roles = "Admin")]
         // GET: Candidates/Create
         public IActionResult Create()
         {
@@ -58,6 +60,7 @@ namespace WebApplication_EvotesNet_6.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("FirstName,LastName,Constituency,Id")] Candidates candidates)
         {
             if (ModelState.IsValid)
@@ -68,7 +71,7 @@ namespace WebApplication_EvotesNet_6.Controllers
             }
             return View(candidates);
         }
-
+        [Authorize(Roles = "Admin")]
         // GET: Candidates/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -90,6 +93,7 @@ namespace WebApplication_EvotesNet_6.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("FirstName,LastName,Constituency,Id")] Candidates candidates)
         {
             if (id != candidates.Id)
@@ -119,7 +123,7 @@ namespace WebApplication_EvotesNet_6.Controllers
             }
             return View(candidates);
         }
-
+        [Authorize(Roles = "Admin")]
         // GET: Candidates/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -141,6 +145,7 @@ namespace WebApplication_EvotesNet_6.Controllers
         // POST: Candidates/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Candidates == null)
