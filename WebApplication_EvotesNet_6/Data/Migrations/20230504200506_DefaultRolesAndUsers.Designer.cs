@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebApplication_EvotesNet_6.Data;
 
@@ -11,9 +12,10 @@ using WebApplication_EvotesNet_6.Data;
 namespace WebApplication_EvotesNet_6.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230504200506_DefaultRolesAndUsers")]
+    partial class DefaultRolesAndUsers
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -51,15 +53,15 @@ namespace WebApplication_EvotesNet_6.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "82049c77-54af-4663-9fc6-3712cf2788fa",
-                            ConcurrencyStamp = "76d70204-1111-47e3-ae74-b0f6b764c3c2",
+                            Id = "1dc3a895-30aa-4dd9-907a-b00118f7e818",
+                            ConcurrencyStamp = "4514e0be-f7e6-488f-acce-98b507d58d1a",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "d2dd6a1d-10d1-461e-992d-ed375e67fe6f",
-                            ConcurrencyStamp = "62945342-bf7c-4b0c-9e1e-9739d5be0e90",
+                            Id = "1du3a895-30fe-4uu9-907u-b00118f7i818",
+                            ConcurrencyStamp = "b95aa5bf-fe8a-4118-b2ee-f1d0cdd4bd1c",
                             Name = "User",
                             NormalizedName = "USER"
                         });
@@ -157,33 +159,33 @@ namespace WebApplication_EvotesNet_6.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "82049c77-54af-4663-9fc6-3712cf2788fa",
+                            Id = "1dc3a895-30aa-4dd9-907a-b00118f7e818",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "b1043e5c-51ae-4d69-876d-7cf6cf559835",
+                            ConcurrencyStamp = "ad5c710e-c651-4f21-aaa2-920b5f11b9bf",
                             Email = "admin@localhost.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@LOCALHOST.COM",
                             NormalizedUserName = "ADMIN@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAENfHyx5YgMKgZCwO6mQF9nQ4xLI7f7m+GhB/ajG87ts3h8y971W2o7v2NHIh1ysaCQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEM5mm3BM5En4N0nqNNtd6tw6pwtnpV8DMtZlp8qtdvD6xjQG8R9x+qqp8kPm42Dr4Q==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "ef7e78ae-4439-42fd-87a8-8f7e5a9fd4a4",
+                            SecurityStamp = "1bfca560-ff71-4e8e-91d9-b0864cb70500",
                             TwoFactorEnabled = false,
                             UserName = "admin@localhost.com"
                         },
                         new
                         {
-                            Id = "d2dd6a1d-10d1-461e-992d-ed375e67fe6f",
+                            Id = "1du3a895-30fe-4uu9-907u-b00118f7i818",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "7565fbf4-310d-4037-bd0a-fbd4ad96e0d6",
+                            ConcurrencyStamp = "3aedf728-df39-4867-9cb6-9a1a391bdc22",
                             Email = "user@localhost.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@LOCALHOST.COM",
                             NormalizedUserName = "USER@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAELpgTo3gg+uTa2osqZPW+rx8pzvbnY4bU2xkr6bXaoBgoe5pBhPEPy7fNZaZx3Et0g==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEFkd+8iO0i3rZ+grl3Bfv17v8veesrIkcis3nizRRDv3irr+3FZudg/BPJvmE8mQ6A==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "1d2b0013-400a-4dd2-8833-6916f8dc282d",
+                            SecurityStamp = "91f6ed4f-44da-41de-a3d9-39deddb95280",
                             TwoFactorEnabled = false,
                             UserName = "user@localhost.com"
                         });
@@ -255,8 +257,8 @@ namespace WebApplication_EvotesNet_6.Data.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "d2dd6a1d-10d1-461e-992d-ed375e67fe6f",
-                            RoleId = "82049c77-54af-4663-9fc6-3712cf2788fa"
+                            UserId = "1dc3a895-30aa-4dd9-907a-b00118f7e818",
+                            RoleId = "1dc3a895-30aa-4dd9-907a-b00118f7e818"
                         });
                 });
 
