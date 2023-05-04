@@ -37,9 +37,9 @@
                 @Html.DisplayFor(modelItem => item.Constituency)
             </td>
             <td>
-                @*<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> *@
+                <a asp-action="Edit" class="btn btn-info" asp-route-id="@item.Id"><i class="fas fa-info-circle"> Edit</a> 
                     <a asp-action="Details" class="btn btn-info" asp-route-id="@item.Id"><i class="fas fa-info-circle"></i> Details</a>
-                @*<a asp-action="Delete" asp-route-id="@item.Id">Delete</a>*@
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }
