@@ -10,9 +10,14 @@ namespace WebApplication_EvotesNet_6.Configerations.Entities
             builder.HasData(
                     new IdentityUserRole<string>
                     {
-                        RoleId = "82049c77-54af-4663-9fc6-3712cf2788fa",
-                        UserId = "d2dd6a1d-10d1-461e-992d-ed375e67fe6f"
-                    }
+                        RoleId = "91978a77-54df-4663-9mi6-3712nf2788fa",
+                        UserId = "798302a7-46d3-4m72-aina-00ee2e5f7e55"
+                    },
+                     new IdentityUserRole<string>
+                     {
+                         RoleId = "u2se6r1d-10d1-461e-367d-ed375e67fe6f",
+                         UserId = "af1302f7-46d3-4a72-acda-00ee2e5f7e55"
+                     }
                 );
         }
     }

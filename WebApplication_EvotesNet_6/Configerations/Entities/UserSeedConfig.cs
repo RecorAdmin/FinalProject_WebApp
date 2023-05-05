@@ -12,7 +12,7 @@ namespace WebApplication_EvotesNet_6.Configerations.Entities
             builder.HasData(
                new IdentityUser
                    {
-                       Id = "82049c77-54af-4663-9fc6-3712cf2788fa",
+                       Id = "798302a7-46d3-4m72-aina-00ee2e5f7e55",
                        Email = "admin@localhost.com",
                        NormalizedEmail = "ADMIN@LOCALHOST.COM",
                        NormalizedUserName = "ADMIN@LOCALHOST.COM",
@@ -22,7 +22,7 @@ namespace WebApplication_EvotesNet_6.Configerations.Entities
                },
                 new IdentityUser
                 {
-                    Id = "d2dd6a1d-10d1-461e-992d-ed375e67fe6f",
+                    Id = "af1302f7-46d3-4a72-acda-00ee2e5f7e55",
                     Email = "user@localhost.com",
                     NormalizedEmail = "USER@LOCALHOST.COM",
                     NormalizedUserName = "USER@LOCALHOST.COM",

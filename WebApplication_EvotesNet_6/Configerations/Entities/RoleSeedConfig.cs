@@ -11,13 +11,13 @@ namespace WebApplication_EvotesNet_6.Configerations.Entities
             builder.HasData(
                 new IdentityRole
                     {
-                        Id = "82049c77-54af-4663-9fc6-3712cf2788fa",
+                        Id = "91978a77-54df-4663-9mi6-3712nf2788fa",
                         Name = "Admin",
                         NormalizedName = "ADMIN"
                     },
                 new IdentityRole
                 {
-                    Id = "d2dd6a1d-10d1-461e-992d-ed375e67fe6f",
+                    Id = "u2se6r1d-10d1-461e-367d-ed375e67fe6f",
                     Name = "User",
                     NormalizedName = "USER"
                 }

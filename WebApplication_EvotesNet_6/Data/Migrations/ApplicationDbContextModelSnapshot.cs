@@ -51,15 +51,15 @@ namespace WebApplication_EvotesNet_6.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "82049c77-54af-4663-9fc6-3712cf2788fa",
-                            ConcurrencyStamp = "76d70204-1111-47e3-ae74-b0f6b764c3c2",
+                            Id = "91978a77-54df-4663-9mi6-3712nf2788fa",
+                            ConcurrencyStamp = "65a73eea-3a20-43c7-9280-eeae9a706837",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "d2dd6a1d-10d1-461e-992d-ed375e67fe6f",
-                            ConcurrencyStamp = "62945342-bf7c-4b0c-9e1e-9739d5be0e90",
+                            Id = "u2se6r1d-10d1-461e-367d-ed375e67fe6f",
+                            ConcurrencyStamp = "9adf0892-70bd-462f-ad26-bc0d136f42e4",
                             Name = "User",
                             NormalizedName = "USER"
                         });
@@ -157,33 +157,33 @@ namespace WebApplication_EvotesNet_6.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "82049c77-54af-4663-9fc6-3712cf2788fa",
+                            Id = "798302a7-46d3-4m72-aina-00ee2e5f7e55",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "b1043e5c-51ae-4d69-876d-7cf6cf559835",
+                            ConcurrencyStamp = "f322b8f7-1a76-4a5b-b9a9-b5640f2ec968",
                             Email = "admin@localhost.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@LOCALHOST.COM",
                             NormalizedUserName = "ADMIN@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAENfHyx5YgMKgZCwO6mQF9nQ4xLI7f7m+GhB/ajG87ts3h8y971W2o7v2NHIh1ysaCQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEMPq7PAdM4m0m+od2MzfX4147dgwV4EUMFPgQdwXVOBl8N2cPJfbz4OLyjFe919f0w==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "ef7e78ae-4439-42fd-87a8-8f7e5a9fd4a4",
+                            SecurityStamp = "02b7b3c8-5270-4552-95f3-649d69479a65",
                             TwoFactorEnabled = false,
                             UserName = "admin@localhost.com"
                         },
                         new
                         {
-                            Id = "d2dd6a1d-10d1-461e-992d-ed375e67fe6f",
+                            Id = "af1302f7-46d3-4a72-acda-00ee2e5f7e55",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "7565fbf4-310d-4037-bd0a-fbd4ad96e0d6",
+                            ConcurrencyStamp = "c0f34653-84f0-420c-8117-b22c65d5437d",
                             Email = "user@localhost.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@LOCALHOST.COM",
                             NormalizedUserName = "USER@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAELpgTo3gg+uTa2osqZPW+rx8pzvbnY4bU2xkr6bXaoBgoe5pBhPEPy7fNZaZx3Et0g==",
+                            PasswordHash = "AQAAAAEAACcQAAAAELEzjyP8HyL6O0aaSifGBAJhrkSQyHnHJPE2wdk48KEcV1III9rXn805BsPNDqx1AA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "1d2b0013-400a-4dd2-8833-6916f8dc282d",
+                            SecurityStamp = "7ee41db5-1835-4c97-98f4-7bae89e73486",
                             TwoFactorEnabled = false,
                             UserName = "user@localhost.com"
                         });
@@ -255,8 +255,13 @@ namespace WebApplication_EvotesNet_6.Data.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "d2dd6a1d-10d1-461e-992d-ed375e67fe6f",
-                            RoleId = "82049c77-54af-4663-9fc6-3712cf2788fa"
+                            UserId = "798302a7-46d3-4m72-aina-00ee2e5f7e55",
+                            RoleId = "91978a77-54df-4663-9mi6-3712nf2788fa"
+                        },
+                        new
+                        {
+                            UserId = "af1302f7-46d3-4a72-acda-00ee2e5f7e55",
+                            RoleId = "u2se6r1d-10d1-461e-367d-ed375e67fe6f"
                         });
                 });
 

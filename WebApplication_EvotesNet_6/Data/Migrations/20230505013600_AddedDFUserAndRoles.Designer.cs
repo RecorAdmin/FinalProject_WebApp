@@ -12,8 +12,8 @@ using WebApplication_EvotesNet_6.Data;
 namespace WebApplication_EvotesNet_6.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230504200506_DefaultRolesAndUsers")]
-    partial class DefaultRolesAndUsers
+    [Migration("20230505013600_AddedDFUserAndRoles")]
+    partial class AddedDFUserAndRoles
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -53,15 +53,15 @@ namespace WebApplication_EvotesNet_6.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "1dc3a895-30aa-4dd9-907a-b00118f7e818",
-                            ConcurrencyStamp = "4514e0be-f7e6-488f-acce-98b507d58d1a",
+                            Id = "91978a77-54df-4663-9mi6-3712nf2788fa",
+                            ConcurrencyStamp = "65a73eea-3a20-43c7-9280-eeae9a706837",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "1du3a895-30fe-4uu9-907u-b00118f7i818",
-                            ConcurrencyStamp = "b95aa5bf-fe8a-4118-b2ee-f1d0cdd4bd1c",
+                            Id = "u2se6r1d-10d1-461e-367d-ed375e67fe6f",
+                            ConcurrencyStamp = "9adf0892-70bd-462f-ad26-bc0d136f42e4",
                             Name = "User",
                             NormalizedName = "USER"
                         });
@@ -159,33 +159,33 @@ namespace WebApplication_EvotesNet_6.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "1dc3a895-30aa-4dd9-907a-b00118f7e818",
+                            Id = "798302a7-46d3-4m72-aina-00ee2e5f7e55",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ad5c710e-c651-4f21-aaa2-920b5f11b9bf",
+                            ConcurrencyStamp = "f322b8f7-1a76-4a5b-b9a9-b5640f2ec968",
                             Email = "admin@localhost.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@LOCALHOST.COM",
                             NormalizedUserName = "ADMIN@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEM5mm3BM5En4N0nqNNtd6tw6pwtnpV8DMtZlp8qtdvD6xjQG8R9x+qqp8kPm42Dr4Q==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEMPq7PAdM4m0m+od2MzfX4147dgwV4EUMFPgQdwXVOBl8N2cPJfbz4OLyjFe919f0w==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "1bfca560-ff71-4e8e-91d9-b0864cb70500",
+                            SecurityStamp = "02b7b3c8-5270-4552-95f3-649d69479a65",
                             TwoFactorEnabled = false,
                             UserName = "admin@localhost.com"
                         },
                         new
                         {
-                            Id = "1du3a895-30fe-4uu9-907u-b00118f7i818",
+                            Id = "af1302f7-46d3-4a72-acda-00ee2e5f7e55",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "3aedf728-df39-4867-9cb6-9a1a391bdc22",
+                            ConcurrencyStamp = "c0f34653-84f0-420c-8117-b22c65d5437d",
                             Email = "user@localhost.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@LOCALHOST.COM",
                             NormalizedUserName = "USER@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEFkd+8iO0i3rZ+grl3Bfv17v8veesrIkcis3nizRRDv3irr+3FZudg/BPJvmE8mQ6A==",
+                            PasswordHash = "AQAAAAEAACcQAAAAELEzjyP8HyL6O0aaSifGBAJhrkSQyHnHJPE2wdk48KEcV1III9rXn805BsPNDqx1AA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "91f6ed4f-44da-41de-a3d9-39deddb95280",
+                            SecurityStamp = "7ee41db5-1835-4c97-98f4-7bae89e73486",
                             TwoFactorEnabled = false,
                             UserName = "user@localhost.com"
                         });
@@ -257,8 +257,13 @@ namespace WebApplication_EvotesNet_6.Data.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "1dc3a895-30aa-4dd9-907a-b00118f7e818",
-                            RoleId = "1dc3a895-30aa-4dd9-907a-b00118f7e818"
+                            UserId = "798302a7-46d3-4m72-aina-00ee2e5f7e55",
+                            RoleId = "91978a77-54df-4663-9mi6-3712nf2788fa"
+                        },
+                        new
+                        {
+                            UserId = "af1302f7-46d3-4a72-acda-00ee2e5f7e55",
+                            RoleId = "u2se6r1d-10d1-461e-367d-ed375e67fe6f"
                         });
                 });
 
